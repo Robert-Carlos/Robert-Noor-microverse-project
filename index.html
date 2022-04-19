@@ -11,12 +11,22 @@
     <p id="description">This sentence describes our project</p>
     <form action="" id="survey-form">survey form
       <div class="form-group">
-      <lable for="name" id="name"> Name:</lable>
-       <input type="text" id="name">
-       <lable for="email" id="email"> Email:</lable>
-       <input type="text" id="email">
-       <lable for="number" id="number"> Number:</lable>
-       <input type="number" id="number">
+      <lable for="name" id="name-lable"> Name:</lable>
+       <input type="text" id="name" required placeholder="enter your full name">
+       <lable for="email" id="email-label"> Email:</lable>
+       <input type="text" id="email" class="form-control" required placeholder="enter your email">
+       <lable for="number" id="number-label"> Number:</lable>
+       <input type="number" id="number" required min="10" max="20">
+      
+      </div>
+
+      <div class="form-group">
+        <p> enter data</p>
+        <select
+             name="role"
+             id="drop down"
+             class="form-control"
+             required></select>
 
       </div>
     </form>
